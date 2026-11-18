@@ -1,0 +1,80 @@
+{
+  "laboratorio": "S14",
+  "id_estudiante": "16",
+  "semilla": 1016,
+  "timestamp_utc": "2026-11-18T01:05:10.375831+00:00",
+  "python": "3.13.18",
+  "pandas": "2.2.3",
+  "numpy": "2.4.6",
+  "sklearn": "1.6.1",
+  "n_muestra": 35000,
+  "n_train": 24500,
+  "n_valid": 5250,
+  "n_test_reservado": 5250,
+  "huella_muestra": "44b677b70804",
+  "umbral": 0.5,
+  "class_weight": "balanced",
+  "pca": {
+    "n_variables_numericas": 24,
+    "componentes_90pct": 15,
+    "varianza_acumulada": 0.9061744511331743
+  },
+  "experimentos": {
+    "A. Sin PCA, C=1.0": {
+      "accuracy": 0.678667,
+      "precision": 0.118187,
+      "recall": 0.578652,
+      "f1": 0.196284,
+      "ap": 0.155314,
+      "VP": 206,
+      "FP": 1537,
+      "FN": 150,
+      "VN": 3357,
+      "costo_brl": 17546
+    },
+    "B. PCA 90 %, C=1.0": {
+      "accuracy": 0.657714,
+      "precision": 0.104772,
+      "recall": 0.536517,
+      "f1": 0.17531,
+      "ap": 0.12242,
+      "VP": 191,
+      "FP": 1632,
+      "FN": 165,
+      "VN": 3262,
+      "costo_brl": 18831
+    },
+    "C. PCA 90 %, C=0.1": {
+      "accuracy": 0.66,
+      "precision": 0.10503,
+      "recall": 0.533708,
+      "f1": 0.17552,
+      "ap": 0.121746,
+      "VP": 190,
+      "FP": 1619,
+      "FN": 166,
+      "VN": 3275,
+      "costo_brl": 18762
+    },
+    "D. PCA 90 %, C=10.0": {
+      "accuracy": 0.657333,
+      "precision": 0.10509,
+      "recall": 0.539326,
+      "f1": 0.175905,
+      "ap": 0.122011,
+      "VP": 192,
+      "FP": 1635,
+      "FN": 164,
+      "VN": 3259,
+      "costo_brl": 18820
+    }
+  },
+  "modelo_menor_costo": "A. Sin PCA, C=1.0",
+  "ks_valor_flete": {
+    "D": 0.013414965986394578,
+    "p_valor": 0.41426435242350923,
+    "n_train": 24500,
+    "n_valid": 5250,
+    "alpha": 0.05
+  }
+}
